@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
+import Header from './headernav/header';
+import Navbar from './headernav/navbar';
+
 class Layout extends Component {
     render() {
         return ( 
-            <div className = 'app' >
-                <h1> DevCamp React Starter </h1> 
-                <h2> React Redux Router </h2> { this.props.children } 
+            <div className = 'layout' >
+                 { this.props.children } 
+                 <Header/>
+                 <Navbar/>
             </div>
         );
     }
